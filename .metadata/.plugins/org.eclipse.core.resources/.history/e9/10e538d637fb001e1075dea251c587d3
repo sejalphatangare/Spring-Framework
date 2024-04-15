@@ -1,0 +1,13 @@
+package spingcore.ci;
+
+public class Person {
+	private String name;
+	private int personId;
+	
+//	Constructor Injection
+	public Person(String name,int personId) {
+		this.name=name;
+		this.personId=personId;
+	}
+	
+}
