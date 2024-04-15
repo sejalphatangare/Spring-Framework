@@ -1,0 +1,6 @@
+#Mon Apr 15 13:03:19 IST 2024
+__DEFAULT__=false
+expression=github
+org.eclipse.help.ui.localSearch.master=true
+org.eclipse.sdk.Eclipse.master=true
+org.eclipse.sdk.Google.master=true
