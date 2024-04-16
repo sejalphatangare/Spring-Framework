@@ -1,2 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+    <typeInfo handle="=springcore/C:\/Users\/jdpha\/.m2\/repository\/org\/springframework\/spring-context\/6.1.4\/spring-context-6.1.4.jar=/maven.pomderived=/true=/=/javadoc_location=/jar:file:\/C:\/Users\/jdpha\/.m2\/repository\/org\/springframework\/spring-context\/6.1.4\/spring-context-6.1.4-javadoc.jar\!\/=/=/maven.groupId=/org.springframework=/=/maven.artifactId=/spring-context=/=/maven.version=/6.1.4=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;org.springframework.context.annotation(CommonAnnotationBeanPostProcessor.class[CommonAnnotationBeanPostProcessor" modifiers="33" timestamp="1713077409179"/>
+</typeInfoHistroy>
