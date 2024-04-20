@@ -25,13 +25,16 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.spring.jdbc"/>
 			<item value="springcore"/>
 			<item value="springcore.springcore"/>
 		</list>
 		<list key="groupId">
+			<item value="com.spring.jdbc"/>
 			<item value="springcore"/>
 		</list>
 		<list key="artifactId">
+			<item value="springjdbc"/>
 			<item value="springcore"/>
 		</list>
 		<list key="projectNameTemplate">
