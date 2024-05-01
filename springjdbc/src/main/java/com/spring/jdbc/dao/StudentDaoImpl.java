@@ -1,6 +1,11 @@
 package com.spring.jdbc.dao;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
+
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
 
 import com.spring.jdbc.entities.Student;
 
@@ -26,6 +31,51 @@ public class StudentDaoImpl implements StudentDao {
 	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
 		this.jdbcTemplate = jdbcTemplate;
 	}
+
+
+	@Override
+	public int change(Student student) {
+		// TODO Auto-generated method stub
+//		updating data
+		String query="update student set name=? , city=? where id=? ";
+		int r=this.jdbcTemplate.update(query,student.getName(),student.getCity(),student.getId());
+		return r;
+	}
+
+
+	@Override
+	public int delete(int studentId) {
+		// TODO Auto-generated method stub
+//		delete operation
+		String query="delete from student where id=?";
+		int r=this.jdbcTemplate.update(query,studentId);
+		return r;
+	}
+
+
+	@Override
+	public Student getStudent(int studentId) {
+		// TODO Auto-generated method stub
+//		Select single student data
+		String query="select * from student where id=?";
+		RowMapper<Student> rowMapper=new RowMapperImpl();
+		Student student=(Student) this.jdbcTemplate.queryForObject(query,rowMapper,studentId);
+		
+		return student;
+	}
+
+
+	@Override
+	public List<Student> getAllStudents() {
+		// TODO Auto-generated method stub
+//		selecting multiple students
+		String query="select * from student";
+		List<Student> students=this.jdbcTemplate.query(query, new RowMapperImpl());
+		return students;
+	}
+
+
+	
 
 	
 }
