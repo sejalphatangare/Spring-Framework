@@ -4,13 +4,18 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Component;
 
 import com.spring.jdbc.entities.Student;
 
+@Component("studentDao")
 public class StudentDaoImpl implements StudentDao {
 
+//	@Autowired    <--- can be used here or on setter method
 	private JdbcTemplate jdbcTemplate;
 	
 	
@@ -28,6 +33,7 @@ public class StudentDaoImpl implements StudentDao {
 	}
 
 
+	@Autowired
 	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
 		this.jdbcTemplate = jdbcTemplate;
 	}

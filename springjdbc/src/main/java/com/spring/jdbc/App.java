@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
 
@@ -17,7 +18,10 @@ public class App
     {
         System.out.println( "My Program Started!" );
 //        spring jdbc => JdbcTemplate
-        ApplicationContext context=new ClassPathXmlApplicationContext("com/spring/jdbc/config.xml");
+//  ---> after using Connfig.xml bean file ApplicationContext context=new ClassPathXmlApplicationContext("com/spring/jdbc/config.xml");
+//   -->without using bean xml file-->
+        ApplicationContext context = new AnnotationConfigApplicationContext(JdbcConfig.class);
+        
 //        JdbcTemplate template = context.getBean("jdbcTemplate",JdbcTemplate.class);
 //        
 ////        insert query
@@ -29,13 +33,13 @@ public class App
 //        INSERT
 //        StudentDao studentDao = context.getBean("studentDao",StudentDao.class);
 //        Student student = new Student();
-//        student.setId(666);
+//        student.setId(6668);
 //        student.setName("Manish Singh");
 //        student.setCity("Punjab");
 //        
 //        int result=studentDao.insert(student);
 //        System.out.println("Student Added: "+result);
-        
+//        
         
 //        UPDATE
 //        Student student = new Student();
