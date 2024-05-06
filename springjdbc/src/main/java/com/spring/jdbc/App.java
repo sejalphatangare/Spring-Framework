@@ -33,7 +33,7 @@ public class App
 //        INSERT
 //        StudentDao studentDao = context.getBean("studentDao",StudentDao.class);
 //        Student student = new Student();
-//        student.setId(6668);
+//        student.setId(6668); 
 //        student.setName("Manish Singh");
 //        student.setCity("Punjab");
 //        

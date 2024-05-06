@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\Spring Framework"/>
+			<item value="D:\Spring Framework\springjdbc\src\main\java\com\spring\jdbc\App.java"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -25,17 +27,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.spring.jdbc"/>
-			<item value="springcore"/>
-			<item value="springcore.springcore"/>
+			<item value="com.Hibernate"/>
 		</list>
 		<list key="groupId">
-			<item value="com.spring.jdbc"/>
-			<item value="springcore"/>
+			<item value="com"/>
 		</list>
 		<list key="artifactId">
-			<item value="springjdbc"/>
-			<item value="springcore"/>
+			<item value="Hibernate"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
